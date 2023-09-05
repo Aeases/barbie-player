@@ -36,7 +36,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-16 sm:grid-cols-2 md:gap-16 ">
             <div
               className="flex flex-col gap-4 rounded-xl border-style scale-[200%] p-2 w-full max-h-lg md:max-w-xl" onClick={playAudio}>
-              <h3 className="text-2xl font-bold text-white"> <PlayButton classname="transition-all" isPlaying={audioPlaying} /> </h3>
+              <h3 className="text-2xl font-bold text-fuchsia-500"> <PlayButton classname="transition-all" isPlaying={audioPlaying} /> </h3>
               <audio src="icons/barbie.mp3" id="audio_id"className="hidden">
                 <a href="AudioTest.ogg">Download OGG audio</a>.
               </audio>
