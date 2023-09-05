@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --background-primary-obsidian: #1e1e20;
+    --background-secondary-obsidian: #161618;
+    --hr-color-obsidian: #4343487a;
+    --button-background-hover: #222226;
+    --button-border-hover: #434348;
+    --button-color-hover: #fff;
+    --button-text-color: #fffff5db;
+}
+
+
+.border-style {
+    border: 1px solid var(--hr-color-obsidian);
+    transition: color .25s,border-color .25s,background-color .25s;
+    background-color: var(--background-secondary-obsidian);
+    color: var(--button-text-color)
+}
+
+.border-style:hover {
+    border-color: var(--button-border-hover);
+    color: var(--button-color-hover);
+    background-color: var(--button-background-hover);
+}
+
+body {
+    height: 100%;
+    overflow-y: hidden;
+ }
